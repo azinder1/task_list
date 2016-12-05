@@ -18,4 +18,10 @@ describe (Task) do
       expect(task1).to(eq(task2))
     end
   end
+
+  describe('.all') do
+    it "it will return all(it should be empty)" do
+      expect(Task.all()).to(eq([]))
+    end
+  end
 end
