@@ -1,9 +1,10 @@
 class Task
-  attr_reader(:description)
+  attr_reader(:description, :list_id)
 
 
   def initialize(attributes)
     @description = attributes[:description]
+    @list_id = attributes[:list_id]
   end
 
   def ==(another_task)
