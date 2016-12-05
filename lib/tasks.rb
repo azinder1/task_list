@@ -9,6 +9,7 @@ class Task
   def ==(another_task)
     self.description() == (another_task.description())
   end
+
   def self.all
     returned_tasks = DB.exec("Select * FROM tasks;")
     tasks = []
@@ -17,5 +18,9 @@ class Task
       tasks.push(Task.new({:description => description}))
     end
     tasks
+  end
+
+  def save
+    saved = DB.exec("INSERT INTO  tasks (description) VALUES ('#{@description}')")
   end
 end
