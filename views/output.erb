@@ -1,0 +1,11 @@
+<a href="/">Home</a>
+<h1>Your Chore List</h1>
+
+<div class="list">
+  <ul>
+    <% @tasks.each() do |task|%>
+      <li> <%= task.description() %></li>
+    <% end %>
+  </ul>
+
+</div>

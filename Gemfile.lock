@@ -26,8 +26,6 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
-    pry-nav (0.2.4)
-      pry (>= 0.9.10, < 0.11.0)
     public_suffix (2.0.4)
     rack (1.6.5)
     rack-protection (1.5.3)
@@ -69,7 +67,7 @@ PLATFORMS
 DEPENDENCIES
   capybara
   pg
-  pry-nav
+  pry
   rspec
   sinatra
   sinatra-contrib

@@ -1,6 +1,6 @@
 source('https://www.rubygems.org')
 
-gem('pry-nav')
+gem('pry')
 gem('rspec')
 gem('pg')
 gem('sinatra')
